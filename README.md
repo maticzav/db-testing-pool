@@ -1,2 +1,11 @@
 # db-testing-pool
-🏖️ Utility to create a pool of ephemeral databases for parallel testing (e.g. with Jest, AVA, ...)
+
+> An easy to use pooling library for Prisma.
+
+## Overview
+
+This library helps you manage the number of Prisma instances you can manipulate with.
+
+## License
+
+MIT
