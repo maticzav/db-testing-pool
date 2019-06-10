@@ -30,9 +30,11 @@ describe('something important', { clean: 'per-test' | 'per-block' }, () => {
 
 // #2
 /**
- * Manual execution.
+ * Manual pool.
+ *
  * Pros: More managable, less abstract.
- * Cons: Lots of manual work.
+ * Cons: Lots of manual work, global db instances. Possible need to use `globalTeardown/globalSetup`
+ *  to have the same db used in multiple tests (make pool global variable).
  */
 
 describe('test Prisma', () => {
