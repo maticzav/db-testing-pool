@@ -1,9 +1,13 @@
-export interface PoolDefinition {
-  endpoint: string
+export type PoolDefinition = {
+  datamodel: string
   pool: {
     min?: number
     max: number
   }
   auth?: { token: string }
-  mock?: Faker
+}
+
+export type DBInstance = {
+  prismaYmlPath: string
+  prismaConfig: string
 }
